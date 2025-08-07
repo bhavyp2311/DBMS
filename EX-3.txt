@@ -1,0 +1,17 @@
+1) Add a column “SPOUSE” to the emp table that will hold the name of an employee’s spouse. 
+-> ALTER TABLE EMP ADD SPOUSE VARCHAR(50);
+
+2) Modify the job of employees to “programmer” whose job is “trainee”. 
+-> UPDATE EMP SET JOB='PROGRAMMER' WHERE JOB='TRAINEE';
+
+3) Delete record whose location is “Baroda” from dept table. 
+-> DELETE FROM DEPT WHERE LOCATION='BARODA';
+
+4) Drop a table “stud_master”. 
+-> DROP TABLE STUD_MASTER;
+
+5) Create a table “ManagerHist” from emp whose job is “Manager”. 
+-> CREATE TABLE MANAGERHIST AS SELECT * FROM EMP WHERE JOB='MANAGET';
+
+6) Copy all the information of “department“ into the “ManagerHist” table. 
+-> IDK!!!!!
