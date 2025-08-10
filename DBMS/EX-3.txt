@@ -11,7 +11,7 @@
 -> DROP TABLE STUD_MASTER;
 
 5) Create a table “ManagerHist” from emp whose job is “Manager”. 
--> CREATE TABLE MANAGERHIST AS SELECT * FROM EMP WHERE JOB='MANAGET';
+-> CREATE TABLE MANAGERHIST AS SELECT * FROM EMP WHERE JOB='MANAGER';
 
 6) Copy all the information of “department“ into the “ManagerHist” table. 
 -> IDK!!!!!
