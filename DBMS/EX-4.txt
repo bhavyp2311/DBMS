@@ -1,0 +1,45 @@
+1)-difference between count(col) and count(distinct column) 
+-> difference is count col is this is count all column of column name ans count(distinct column) is it ddosent count duplicate column it count only unique column.
+
+2)select 25.65,round(25.65) from dual;
+  select distinct round(25.65) from emp;
+   select round(25.65);
+
+3)select replace("Hello world","Hello",'"hi") from emp;
+  select translate('hello','he','HE') from emp;
+
+create table ord(
+  ord_no number(10),
+  purch_amt number(10,2),
+  ord_date DATE,
+  customer_id number(10),
+  salseman_id number(10));
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70001,150.5,'05-10-2012',3005,5002);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70009,270.65,'10-09-2012',3001,5005);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70002,65.26,'05-10-2012',3002,5001);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70004,110.5,'17-08-2012',3009,5003);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70007,948.5,'10-09-2012',3005,5002);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70005,2400.6,'27-09-2012',3007,5001);
+
+INSERT INTO ORD(ord_no,purch_amt,ord_date,customer_id,salseman_id)
+VALUES(70008,5760,'10-09-2012',3002,5001);
+
+SELECT MIN(PURCH_AMT) FROM ORD;
+SELECT COUNT(ORD_NO) FROM ORD;
+SELECT CUSTOMER_ID,MAX(PURCH_AMT) FROM ORD GROUP BY CUSTOMER_ID;
+
+
+
+
