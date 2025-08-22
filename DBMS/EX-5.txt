@@ -1,0 +1,18 @@
+1) Write down the query that “Display each employee name with hire date, and salary review date. Assume review date is after one year after hire date. Order the output in ascending review date order”. 
+-> SELECT ENAME,HIREDATE,SAL,ADD_MONTHS(HIREDATE,12) REVIEW_DATE FROM EMP ORDER BY REVIEW_DATE ASC;
+
+2) Differentiate: ROUND and TRUNC functions. 
+-> ROUND -> Rounds a number or date to nearest specified precision.
+            EX-> ROUND(123.456, 2) → 123.46
+   TRUNC -> cuts off digits or date without rounding.
+	    EX-> TRUNC(123.456, 2) → 123.45
+
+3) The __________ function returns number of months between two dates. 
+-> MONTHS_BETWEEN()
+
+4) The TO_DATE() function also disallows part insertion of a DATE value into a column. (State True / False with justification.) 
+-> True 
+   BECAUSE TO_DATE() converts a string to a full DATE datatype based on format mask.
+
+5) The __________ function converts a value of a DATE datatype to CHAR value.
+-> TO_CHAR()
