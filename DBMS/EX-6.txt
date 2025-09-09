@@ -1,0 +1,23 @@
+1) Define: Join. Explain self join. 
+-> Join → Combines rows from two/more tables using related columns.
+   Self Join → A table joined with itself
+
+2) Retrieve employee number, employee name and their department name, in department  name order. 
+-> SELECT EMPNO,ENAME,DEPTNO,DNAME
+   FROM EMP JOIN DEPT USING(DEPTNO)
+   ORDER BY DNAME;
+
+3) Show all employee details who lives in Baroda. 
+-> SELECT E.*
+   FROM EMP JOIN DEPT USING(DEPTNO)
+   JOIN LCT USING(LCTNO) WHERE CITY='Baroda';
+4) Display the name, salary and department number of employees whose salary is more than 10000. 
+-> SELECT ENAME,SAL,DEPTNO
+   FROM EMP WHERE SAL>10000;
+
+5) List the employee name, job, and salary and department name for everyone in the company except clerks. Sort on salary displaying the highest salary first. 
+-> SELECT ENAME,JOB,SAL,DNAME 
+   FROM EMP JOIN DEPT USING(DEPTNO) 
+   WHERE JOB != 'CLERK' ORDER BY SAL DESC;
+6) List all employees by name and number along with their manager’s name and number. 
+7) Display all the employees who earn less than their managers. 
